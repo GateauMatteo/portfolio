@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Head commun -->
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Mon Parcours - Matteo Gateau</title>
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/bootstrap-theme.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/swiper.min.css">
+  <link href="css/style.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700|Open+Sans:300,400,700" rel="stylesheet">
+</head>
+<body>
+  <header class="hero">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 col-md-offset-6 col-xs-12">
+          <nav>
+            <div id="menu-toggle">
+              <div class="hamburger"><span class="line"></span><span class="line"></span><span class="line"></span></div>
+              <div class="cross"><span class="line"></span><span class="line"></span></div>
+            </div>
+            <ul class="main-nav">
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="Portfolio.html">Mes Projets</a></li>
+                <li><a href="about.html">Mon Parcours</a></li>
+                <li><a href="veille.html">Ma veille</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="Skills.html">Mes Compétences</a></li>
+            </ul>
+          </nav>
+          <div class="hero-text">
+            <h1>Mon Parcours</h1>
+            <h3>Voici une présentation de mon parcours scolaire et professionnel.</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <section class="container" style="margin-top: 50px;">
+    <div class="row">
+        <div class="col-md-6">
+          <div class="panel panel-default">
+            <div class="panel-heading"><strong>BTS SIO - SLAM</strong></div>
+            <div class="panel-body">
+              <p>2022 - 2025</p>
+              <p>Lycée Mathias, Chalon-sur-Saône</p>
+
+            Expérience Professionnel :
+            Udaf, stage de 6 semaines : realisation de deux site pour mon experience personnels en php avec du sql.
+            Cicfm, deux stages de 6 semaines : realisation d'un site web pour l'association + une application de base de donnees pour la partie médiation de l'association
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="panel panel-default">
+            <div class="panel-heading"><strong>Bac Pro SN - RISC</strong></div>
+            <div class="panel-body">
+              <p>2019 - 2022</p>
+              <p>Lycée Niépce-Balleure, Chalon-sur-Saône</p>
+
+              Expérience Professionnel : 
+              Allo Panas Ordi, stage de 4 semaines : Réparation de pc portable, et tout objet informatique + réinstalation de windows et aussi réalisation de stock pour le site internet. 
+              Le Grand Chalon, Stage de 4 semaines : Rénitialisation d'ordinateur pour tout les organismes publique du grand chalon (Mairie, comiseriat, bibliothéque, maison de quartier etc..) + Instalation de postes informatique complet (ordinateur + ecran + imprimante + téléphone ip)
+              Captain Repair, Stage de 4 semaines : Réparation d'ordinateur portable et fixe, ainsi que de console, téléphone etc... 
+            </div>
+          </div>
+        </div>
+      </div>
+      
+
+  <!-- Footer -->
+  <footer>
+    <div class="container-fluid">
+      <div class="row footer">
+        <div class="col-md-12 text-center">
+          <h1>Matteo<br><span>Gateau</span></h1>
+          <ul class="social-links">
+            <li><a href="#"><img src="assets/behance.png"></a></li>
+            <li><a href="#"><img src="assets/dribbble.png"></a></li>
+            <li><a href="#"><img src="assets/twitter.png"></a></li>
+            <li><a href="#"><img src="assets/github.png"></a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="row sub-footer">
+        <div class="col-md-12 text-center">
+          <p>Designed by <a href="#">@realvjy</a></p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/jquery-2.1.1.js"></script>
+  <script src="js/swiper.jquery.min.js"></script>
+  <script>
+    $('#menu-toggle').click(function(){
+      $(this).toggleClass('open'), $('.main-nav').toggleClass('show-it');
+    });
+  </script>
+</body>
+</html>

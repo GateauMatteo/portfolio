@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Head commun -->
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Matteo Gateau - Acceuil</title>
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/bootstrap-theme.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/swiper.min.css">
+  <link href="css/style.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700|Open+Sans:300,400,700" rel="stylesheet">
+
+</head>
+<body>
+  <!-- Header + Hero -->
+  <header class="hero">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <nav>
+            <ul class="main-nav">
+              <li><a href="index.html">Accueil</a></li>
+              <li><a href="Portfolio.html">Mes Projets</a></li>
+              <li><a href="about.html">Mon Parcours</a></li>
+              <li><a href="veille.html">Ma veille</a></li>
+              <li><a href="contact.html">Contact</a></li>
+              <li><a href="Skills.html">Mes Compétences</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="col-md-12">
+          <div class="hero-text">
+            <h1><span>Bonjour, je suis </span><br>Matteo Gateau.</h1>
+            <h3>Étudiant en deuxième année de BTS SIO option SLAM</h3>
+            <a href="about.html" class="btn btn-lg btn-primary">Mon Parcours</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Appel à action -->
+  <section class="contact-banner">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 text-center">
+          <h1>Si vous voulez me contacter </h1>
+          <a href="contact.html" class="btn btn-lg btn-primary">Cliquez ici</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container-fluid">
+      <div class="row footer">
+        <div class="col-md-12 text-center">
+          <h1>Matteo<br><span>Gateau</span></h1>
+          <ul class="social-links">
+            <li><a href="#"><img src="assets/behance.png"></a></li>
+            <li><a href="#"><img src="assets/dribbble.png"></a></li>
+            <li><a href="#"><img src="assets/twitter.png"></a></li>
+            <li><a href="#"><img src="assets/github.png"></a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="row sub-footer">
+        <div class="col-md-12 text-center">
+          <p>Designed by <a href="#">@realvjy</a></p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JS commun -->
+  <script src="js/jquery-2.1.1.js"></script>
+  <script src="js/swiper.jquery.min.js"></script>
+  <script src="js/jquery.counterup.min.js"></script>
+  <script>
+    $('.counter').counterUp({ time: 1000 });
+    $('#menu-toggle').click(function(){
+      $(this).toggleClass('open'), $('.main-nav').toggleClass('show-it');
+    })
+  </script>
+</body>
+</html>
