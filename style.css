@@ -1,0 +1,147 @@
+/*!
+ * Author: Akash Bhadange + Modif Accueil Custom Responsive
+ */
+
+ body {
+  font-family: 'Open Sans', sans-serif;
+  background-color: #f2f2f2;
+  font-size: 16px;
+  color: #222;
+  font-weight: normal;
+  letter-spacing: 0.03em;
+  margin: 0;
+  padding: 0;
+}
+a {
+  color: #7447ae;
+  transition: all 0.2s;
+}
+a:hover,
+a:focus,
+a:active {
+  text-decoration: none;
+  outline: none;
+  color: #ff2a75;
+}
+ul,
+li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* Couleurs personnalisées */
+.purple {
+  color: #7447ae;
+}
+.pink {
+  color: #ff2a75;
+}
+.blue {
+  color: #37a7ff;
+}
+
+/* === NAVIGATION PRINCIPALE FIXE ET RESPONSIVE === */
+nav {
+  padding: 20px;
+  background-color: transparent;
+  position: relative;
+  z-index: 1000;
+}
+nav ul.main-nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 20px;
+}
+nav ul.main-nav li a {
+  font-weight: 600;
+  color: #fff;
+  font-family: 'Montserrat', sans-serif;
+  text-transform: uppercase;
+  font-size: 14px;
+  padding: 6px 12px;
+  transition: color 0.3s;
+}
+nav ul.main-nav li a:hover {
+  color: #ffbe61;
+}
+
+/* === HERO SECTION === */
+header.hero {
+  background: url(../assets/hero-bg.jpg) no-repeat center center fixed;
+  background-size: cover;
+  color: #fff;
+  text-align: center;
+  padding: 80px 0;
+}
+.hero-text h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 3em;
+  font-weight: 600;
+  line-height: 1.4em;
+  margin-bottom: 10px;
+}
+.hero-text h1 span,
+.hero-text h3 {
+  font-weight: 300;
+}
+.hero-text h3 {
+  font-size: 1.4em;
+  margin-bottom: 30px;
+}
+.hero-text .btn {
+  margin-bottom: 30px;
+}
+
+ul.social-links {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding: 0;
+  margin: 0;
+}
+ul.social-links li.label {
+  font-size: 18px;
+  margin-right: 10px;
+  font-weight: 400;
+}
+ul.social-links li a {
+  opacity: 0.7;
+}
+ul.social-links li a:hover {
+  opacity: 1;
+}
+ul.social-links img {
+  max-height: 30px;
+}
+
+/* === SECTION RESPONSIVE POUR MOBILE === */
+@media screen and (max-width: 768px) {
+  nav ul.main-nav {
+    flex-direction: column;
+    align-items: center;
+  }
+  nav ul.main-nav li {
+    margin: 10px 0;
+  }
+  .hero-text h1 {
+    font-size: 2em;
+  }
+  .hero-text h3 {
+    font-size: 1.1em;
+  }
+  ul.social-links li.label {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+}
+
+/* Tu peux fusionner les autres sections (.case-study, .testimonial...) à ce style aussi si tu veux. */
