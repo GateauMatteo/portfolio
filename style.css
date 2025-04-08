@@ -15,6 +15,9 @@
 a {
   color: #7447ae;
   transition: all 0.2s;
+  display:flex;
+  align-items:center;
+  gap: 5px;
 }
 a:hover,
 a:focus,
@@ -74,11 +77,9 @@ nav ul.main-nav li a:hover {
 
 /* === HERO SECTION === */
 header.hero {
-  background: url(../assets/hero-bg.jpg) no-repeat center center fixed;
-  background-size: cover;
-  color: #fff;
-  text-align: center;
-  padding: 80px 0;
+ background:#1e2a38;
+ color: white;
+ padding: 100px 0;
 }
 .hero-text h1 {
   font-family: 'Montserrat', sans-serif;
@@ -144,4 +145,30 @@ ul.social-links img {
   }
 }
 
-/* Tu peux fusionner les autres sections (.case-study, .testimonial...) à ce style aussi si tu veux. */
+.section-projets {
+  padding: 60px 0;
+}
+
+.card-project {
+  background: #f7f9fc;
+  padding: 30px;
+  margin: 15px 0;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.card-project:hover {
+  transform: translateY(-5px);
+}
+
+.card-project h4 {
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+.card-project p {
+  color: #555;
+  margin-bottom: 20px;
+}
